@@ -1,0 +1,22 @@
+yaml
+CopyEdit
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ cookiecutter.project_slug }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ cookiecutter.project_slug }}
+  template:
+    metadata:
+      labels:
+        app: {{ cookiecutter.project_slug }}
+    spec:
+      containers:
+        - name: {{ cookiecutter.project_slug }}
+          image: your-docker-image
+          ports:
+            - containerPort: {{ cookiecutter.port }}
+

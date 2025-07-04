@@ -1,0 +1,7 @@
+yaml
+CopyEdit
+apiVersion: v2
+name: {{ cookiecutter.project_slug }}
+description: A Helm chart for deploying {{ cookiecutter.project_name }}
+version: 0.1.0
+

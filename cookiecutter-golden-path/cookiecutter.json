@@ -1,0 +1,8 @@
+{
+  "project_name": "My Microservice",
+  "project_slug": "my_microservice",
+  "author_name": "Raman",
+  "description": "A sample microservice scaffolded using Cookiecutter.",
+  "port": "8080"
+}
+
